@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Balance De Pago</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+ <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<div class="container-fluid">
+<nav>
+	<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active cambiado</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+</nav>
+
+
+<div class="card">
+  <div class="card-header">
+    Documentos Impresión: Usuario: Pedro Perez
+  </div>
+  <div class="card-block">
+
+    <form>
+    <table class="table table-responsive table-hover">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Item</th>
+          <th></th>
+          <th>Monto</th>
+          <th>Estatus</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" id="alcohol-multiples-convicciones-tipo1" value="option1">
+              </label>
+            </div>
+          </th>
+          <td>Alcohol - Múltiples Convicciones Tipo 1</td>
+          <th></th>
+          <td>$310.00USD</td>
+          <td class="sucess">Pagada</td>
+          <th></th>
+        </tr>
+        
+        <tr>
+          <th scope="row">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" id="alcohol-multiples-convicciones-tipo2" value="option2">
+              </label>
+            </div>
+          </th>
+          <td>Alcohol - Múltiples Convicciones Tipo 2</td>
+          <th></th>
+          <td>$310.00USD</td>
+          <td class="alert">Por pagar</td>
+          <th scope="row"><img src="images/ban-circle-symbol.png"></th>
+        </tr>
+
+        <tr>
+          <th scope="row">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" id="alcohol-multiples-convicciones-tipo3" value="option3">
+              </label>
+            </div>
+          </th>
+          <td>Alcohol - Múltiples Convicciones Tipo 3</td>
+          <th></th>
+          <td>$310.00USD</td>
+          <td class="alert">Por pagar</td>
+          <th scope="row"><img src="images/ban-circle-symbol.png"></th>
+        </tr>
+
+        <tr>
+          <th></th>
+          <td></td>
+          <td><strong>Total por pagar</strong><br>3 charlas</td>
+          <td>$310.00USD</td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+          
+
+    <div class="row">
+    <div class="col-md-2">
+      <strong>Registrar Pago</strong>
+    </div>
+
+    <div class="col-md-10">
+      <div class="row">
+
+        <div class="col-md-3">
+
+              <div class="form-group">
+                <label for="sexo">Item a Pagar</label>
+                <select class="form-control" id="item-pagar">
+                  <option>Seleccione</option>
+                  <option>1</option>
+                  <option>2</option>
+                </select>
+              </div>
+        
+        </div><!-- col -->
+
+        <div class="col-md-3">
+
+            <div class="form-group">
+                <label for="sexo">Forma de Pago</label>
+                <select class="form-control" id="forma-pago">
+                  <option>Seleccione</option>
+                  <option>1</option>
+                  <option>2</option>
+                </select>
+              </div>
+            
+        </div><!-- col -->
+
+        <div class="col-md-3">
+
+            <div class="form-group">
+              <label for="fecha-pago">Fecha de Pago</label>
+              <input type="text" class="form-control" id="fecha-pago" placeholder="Ej. 10/10/0000">
+            </div>
+            
+        </div><!-- col -->
+
+      </div>
+    </div><!-- col-9 -->
+
+    </div><!-- row -->
+
+
+    <div class="row">
+          <div class="col-md-2">
+          </div>
+
+          <div class="col-md-10">
+
+                <button type="button" class="btn btn-primary btn-lg">Generar Recibo</button>
+                <button type="button" class="btn btn-secondary btn-lg">Cancelar</button>
+
+
+          </div><!-- col-9 -->
+
+      </div><!-- row -->
+  </form>
+
+
+  </div><!-- card-block -->
+</div><!-- Card -->
+
+
+
+
+ 
+</div><!-- container-fluid -->
+
+<!-- BootStrap and Jquery -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+</body>
+</html>
