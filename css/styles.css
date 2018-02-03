@@ -12,6 +12,8 @@
 
 html {
 	background-color: #F8FBF8;
+	margin:0;
+	height: 100%;
 }
 body {
 	font-family: 'Roboto', Arial, sans-serif;
@@ -20,7 +22,10 @@ body {
 .main {
 	background-color: #F8FBF8;
 }
-
+.container, 
+.container-fluid {
+	background-color: #F8FBF8;
+}
 
 /*
 
@@ -53,7 +58,36 @@ header.main {
 }
 
 
+/*
 
+    LOGIN
+
+*/
+
+body.login {
+	background-image: url(../images/fondo-login.jpg);
+	background-size: cover;
+	margin:0;
+	height: 100%;
+}
+
+body.login .container, 
+body.login .container-fluid {
+	background-color: transparent;
+}
+
+
+/*
+
+	CARDS
+
+*/
+.card {
+	border-color:#FFF176;
+}
+.card-header {
+	background-color: #FFF176;
+}
 
 /*
 

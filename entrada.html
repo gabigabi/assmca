@@ -17,293 +17,129 @@
 
 <body>
 <div class="container-fluid">
-<nav>
-	<ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Active cambiado</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#">Disabled</a>
-  </li>
-</ul>
-</nav>
-
+  <header class="row align-items-end main">
+    <div class="col-sm-auto">
+            <div class="brand">
+        <img src="images/assmca-logo.svg" alt="ASSMCA">
+      </div>
+    </div>
+    <div class="col">
+      <nav>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="entrada.html">Recepción y Citas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="recaudos-busqueda-usuario.html">Recaudos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="charlas-grupales.html">Charlas Grupales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reportes</a>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link" href="#">Administración</a>
+        </li>
+      </ul>
+    </nav>  
+    </div>
+    <div class="col-2">
+      <ul class="nav nav-pills justify-content-end">
+        <li class="nav-item dropdown"">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Pablo Paredes <small>Administrador</small></a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Opción 1</a>
+              <a class="dropdown-item" href="#">Opción 2</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Opción 3</a>
+            </div>
+        </li>
+      </ul>
+    </div>
+  </header>
 
 <div class="card">
   <div class="card-header">
     Búsqueda
   </div>
   <div class="card-block">
-
-
-  <form>
-  <div class="row">
-    <div class="col-md-2">
-      <strong>El Usuario Viene Con</strong>
-    </div>
-
-    <div class="col-md-10">
+    <form action="">
+      <div class="row mb-4">
+        <div class="col-md-2">
+          <strong>El Usuario Viene Con</strong>
+        </div>
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                  Documento Requerido
+                </label>
+              </div>            
+            </div>
+            <div class="col-md-3">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option2" checked>
+                  Cita
+                </label>
+              </div>            
+            </div>
+            <div class="col-md-3">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option3" checked>
+                  Orden Tribunal
+                </label>
+              </div>            
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="row">
-
-        <div class="col-md-4">
-
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-            Documento Requerido
-          </label>
+        <div class="col-md-2">
+          <strong>Buscar Por</strong><br>
+          <small>Escribe un parámetro  para tu búsqueda</small>
         </div>
-        
-        </div><!-- col -->
-
-        <div class="col-md-4">
-
-            <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-            Cita
-          </label>
-        </div>
-            
-        </div><!-- col -->
-
-        <div class="col-md-4">
-
-            <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-            Orden Tribunal
-          </label>
-        </div>
-            
-        </div><!-- col -->
-
-
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="formGroupExampleInput">Seguro Social</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ej. 123456789">
+              </div>            
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="formGroupExampleInput">Identificación</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ej. 22222">
+              </div>            
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="formGroupExampleInput">Fecha de Nacimiento</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ej. 01/01/0000">
+              </div>            
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="formGroupExampleInput">Nombre y Apellido</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ej. John Doe">
+              </div>            
+            </div>
+          </div>
+        </div>        
       </div>
-    </div><!-- col-9 -->
-
-    </div><!-- row -->
-
-
-
       <div class="row">
-    <div class="col-md-2">
-      <strong>Buscar Por</strong><br>
-        <small>Escribe un parámetro  para tu búsqueda</small>
-    </div>
-
-    <div class="col-md-10">
-      <div class="row">
-
-        <div class="col-md-4">
-
-        <div class="form-group">
-          <label for="formGroupExampleInput">Seguro Social</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ej. 123456789">
-        </div>
-        
-        </div><!-- col -->
-
-        <div class="col-md-4">
-
-            <div class="form-group">
-          <label for="formGroupExampleInput">Identificación</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ej. 22222">
-        </div>
-            
-        </div><!-- col -->
-
-        <div class="col-md-4">
-
-            <div class="form-group">
-          <label for="formGroupExampleInput">Fecha de Nacimiento</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ej. 01/01/0000">
-        </div>
-            
-        </div><!-- col -->
-
-
-        <div class="col-md-4">
-
-            <div class="form-group">
-          <label for="formGroupExampleInput">Nombre y Apellido</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ej. John Doe">
-        </div>
-            
-        </div><!-- col -->
-
-      </div><!-- row -->
-
-    </div><!-- col-9 -->
-
-    </div><!-- row -->
-
-    <div class="row">
-    <div class="col-md-2"> </div>
-
-    <div class="col-md-10">
-          <button type="submit" class="btn btn-primary">Buscar</button>
-    </div><!-- col-10 -->
-
-</div><!-- row -->
-</form>
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-  <form class="form-inline">
-
-    <div class="row">
-
-      <div class="col-lg-2 col-md-3">
-        El Usuario Viene Con        
+        <div class="col-md-10 offset-md-2">
+           <button type="submit" class="btn btn-primary">Buscar</button>
+        </div>        
       </div>
-
-      <div class="col-lg-2 col-md-3">
-
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-            Documento Requerido
-          </label>
-        </div>
-        
-      </div>
-
-      <div class="col-lg-2 col-md-3">
-
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-            Cita
-          </label>
-        </div>
-        
-      </div>
-
-      <div class="col-lg-2 col-md-3">
-
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-            Orden Tribunal
-          </label>
-        </div>
-        
-      </div>
-
-      <div class="col-lg-2 col-md-3">        
-      </div>
-      
-    </div>
-
-
-
-
-
-
-    <div class="row">
-
-      <div class="col-lg-2 col-md-4">
-        Buscar Por
-        Escribe un parámetro  para tu búsqueda        
-      </div>
-
-      <div class="col-lg-2 col-md-4">
-
-        <div class="form-group">
-          <label for="formGroupExampleInput">Seguro Social</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ej. 123456789">
-        </div>
-        
-      </div>
-
-      <div class="col-lg-2 col-md-4">
-
-        <div class="form-group">
-          <label for="formGroupExampleInput">Identificación</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ej. 22222">
-        </div>
-        
-      </div>
-
-      <div class="col-lg-2 col-md-4">
-
-        <div class="form-group">
-          <label for="formGroupExampleInput">Fecha de Nacimiento</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ej. 01/01/0000">
-        </div>
-        
-      </div>
-
-      <div class="col-lg-2 col-md-4">
-
-        <div class="form-group">
-          <label for="formGroupExampleInput">Nombre y Apellido</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ej. John Doe">
-        </div>
-        
-      </div>
-      
-    </div>
-
-
-
-
-    <div class="row">
-
-      <div class="col-lg-2 col-md-4">
-      </div>
-
-      <div class="col-lg-2 col-md-4">
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </div> 
-
-      <div class="col-lg-2 col-md-4">
-      </div> 
-
-      <div class="col-lg-2 col-md-4">
-      </div> 
-
-      <div class="col-lg-2 col-md-4">
-      </div>      
-      
-    </div> 
-
-
-  </form>preuba -->
+    </form>
   </div>
-
-  
-
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 </div><!-- container-fluid -->
 
