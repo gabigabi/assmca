@@ -34,7 +34,7 @@
 </ul>
 </nav>
 
-
+<form>
 <div class="card">
   <div class="card-header">
     Registro de nueva cuenta
@@ -46,55 +46,54 @@
     </div>
 
   <div class="row">
-    <div class="col-md-3">
-      Documentos
+    <div class="col-md-2">
+      <strong>Documentos</strong>
     </div>
 
-    <div class="col-md-9">
+    <div class="col-md-10">
       <div class="row">
 
-        <div class="col-md-4">
+        <div class="col-md-3">
 
         <div class="form-group">
-          <label for="formGroupExampleInput">IUP</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ej. 123456789" disabled>
+          <label for="iup">IUP</label>
+          <input type="text" class="form-control" id="iup" placeholder="Ej. 123456789" disabled>
         </div>
         
         </div><!-- col -->
 
-        <div class="col-md-4">
+        <div class="col-md-3">
 
             <div class="form-group">
-              <label for="formGroupExampleInput">Episodio</label>
-              <p>2222</p>
+              <label for="episodio">Episodio</label>
+              <input type="text" class="form-control" id="episodio" placeholder="Ej. 123456789" disabled>
             </div>
             
         </div><!-- col -->
 
-        <div class="col-md-4">
+        <div class="col-md-3">
 
             <div class="form-group">
-              <label for="formGroupExampleInput">Pasaporte</label>
-              <p>2355584</p>
+              <label for="pasaporte">Pasaporte</label>
+              <input type="text" class="form-control" id="pasaporte" placeholder="Ej. 123456789" disabled>
             </div>
             
         </div><!-- col -->
 
-
-        <div class="col-md-4">
+        <div class="col-md-3">
 
             <div class="form-group">
-              <label for="formGroupExampleInput">Licencia</label>
-              <p>335562222</p>
+              <label for="licencia">Licencia</label>
+              <input type="text" class="form-control" id="licencia" placeholder="Ej. 123456789" disabled>
             </div>
             
         </div><!-- col -->
 
-        <div class="col-md-4">
+        <div class="col-md-3">
 
             <div class="form-group">
-              <label for="formGroupExampleInput">Número de Seguro Social</label>
-              <p>123456789</p>
+              <label for="n-seguro-social">Número de Seguro Social</label>
+              <input type="text" class="form-control" id="n-seguro-social" placeholder="Ej. 123456789" disabled>
             </div>
             
         </div><!-- col -->
@@ -110,18 +109,18 @@
 
 
     <div class="row">
-    <div class="col-md-3">
-      Identificación
+    <div class="col-md-2">
+      <strong>Identificación</strong>
     </div>
 
-    <div class="col-md-9">
+    <div class="col-md-10">
       <div class="row">
 
         <div class="col-md-3">
 
         <div class="form-group">
-          <label for="formGroupExampleInput">Primer Nombre</label>
-          <p>Pedro</p>
+          <label for="primer-nombre">Primer Nombre</label>
+          <input type="text" class="form-control" id="primer-nombre" placeholder="Ej. John" disabled>
         </div>
         
         </div><!-- col -->
@@ -129,8 +128,8 @@
         <div class="col-md-3">
 
             <div class="form-group">
-              <label for="formGroupExampleInput">Segundo Nombre</label>
-              <p>José</p>
+              <label for="segundo-nombre">Segundo Nombre</label>
+              <input type="text" class="form-control" id="segundo-nombre" placeholder="Ej. John" disabled>
             </div>
             
         </div><!-- col -->
@@ -138,8 +137,8 @@
         <div class="col-md-3">
 
             <div class="form-group">
-              <label for="formGroupExampleInput">Primer Apellido</label>
-              <p>Perez</p>
+              <label for="primer-apellido">Primer Apellido</label>
+              <input type="text" class="form-control" id="primer-apellido" placeholder="Ej. Perez" disabled>
             </div>
             
         </div><!-- col -->
@@ -148,8 +147,8 @@
         <div class="col-md-3">
 
             <div class="form-group">
-              <label for="formGroupExampleInput">Segundo Apellido</label>
-              <p>Perez</p>
+              <label for="segundo-apellido">Segundo Apellido</label>
+              <input type="text" class="form-control" id="segundo-apellido" placeholder="Ej. Perez" disabled>
             </div>
             
         </div><!-- col -->
@@ -164,18 +163,18 @@
 
 
     <div class="row">
-    <div class="col-md-3">
-      Otros Datos
+    <div class="col-md-2">
+      <strong>Otros Datos</strong>
     </div>
 
-    <div class="col-md-9">
+    <div class="col-md-10">
       <div class="row">
 
         <div class="col-md-3">
 
         <div class="form-group">
-          <label for="formGroupExampleInput">Fecha de Nacimiento</label>
-          12/01/2000
+          <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+          <input type="text" class="form-control" id="fecha-nacimiento" placeholder="Ej. 10/10/0000" disabled>
         </div>
         
         </div><!-- col -->
@@ -183,8 +182,12 @@
         <div class="col-md-3">
 
             <div class="form-group">
-                <label for="exampleSelect1">Sexo</label>
-                <p>Masculino</p>
+                <label for="sexo">Sexo</label>
+                <select class="form-control" id="sexo" disabled>
+                  <option>Seleccione</option>
+                  <option>Femenino</option>
+                  <option>Masculino</option>
+                </select>
               </div>
             
         </div><!-- col -->
@@ -192,8 +195,12 @@
         <div class="col-md-3">
 
             <div class="form-group">
-                <label for="exampleSelect1">Grupo Étnico</label>
-                <p>AAAAA</p>
+                <label for="grupo-etnico">Grupo Étnico</label>
+                <select class="form-control" id="grupo-etnico" disabled>
+                  <option>Seleccione</option>
+                  <option>Blanco</option>
+                  <option>Moreno</option>
+                </select>
               </div>
             
         </div><!-- col -->
@@ -203,7 +210,7 @@
 
             <div class="form-check">
               <label class="form-check-label">
-                <input type="checkbox" class="form-check-input">
+                <input type="checkbox" class="form-check-input" disabled>
                 Veterano
               </label>
             </div>
@@ -213,8 +220,8 @@
         <div class="col-md-3">
 
             <div class="form-group">
-              <label for="exampleInputEmail1">Email</label>
-              <p>nombre@dominio.com</p>            
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="nombre@dominio.com" disabled>              
             </div>
             
         </div><!-- col -->
@@ -230,15 +237,13 @@
 
 
 <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-2">
     </div>
 
-    <div class="col-md-9">
-      <div class="row">
+    <div class="col-md-10">
           <button type="button" class="btn btn-primary btn-lg">Asignar Cita</button>
           <button type="button" class="btn btn-secondary btn-lg">Corregir</button>
 
-      </div>
     </div><!-- col-9 -->
 
 </div><!-- row -->
@@ -254,7 +259,7 @@
 
   </div><!-- card-block -->
 </div><!-- Card -->
-
+</form>
 
 
 
