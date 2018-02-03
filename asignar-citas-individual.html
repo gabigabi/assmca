@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Asignar Citas (Individual)</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+ <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<div class="container-fluid main">
+  <header class="row align-items-end main">
+    <div class="col-sm-auto">
+            <div class="brand">
+        <img src="images/assmca-logo.svg" alt="ASSMCA">
+      </div>
+    </div>
+    <div class="col">
+      <nav>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Recepción y Citas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Recaudos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Charlas Grupales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reportes</a>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link" href="#">Administración</a>
+        </li>
+      </ul>
+    </nav>  
+    </div>
+    <div class="col-2">
+      <ul class="nav nav-pills justify-content-end">
+        <li class="nav-item dropdown"">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Pablo Paredes <small>Administrador</small></a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Opción 1</a>
+              <a class="dropdown-item" href="#">Opción 2</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Opción 3</a>
+            </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+<div class="row">
+  <div class="col-md-3">
+    <div class="card mb-3">
+      <div class="card-header">
+        Orden Judicial
+      </div>
+      <div class="card-block">
+        <label for="orden">Número asocialdo a la cita</label>
+        <select class="custom-select w-100" id="orden">
+          <option selected>OE-2017-82</option>
+          <option value="1">OE-2016-42</option>
+        </select>
+      </div>
+    </div><!-- Card -->
+    <div class="card mb-3">
+      <div class="card-header">
+        Tipo de Cita
+      </div>
+      <div class="card-block">
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="trabajadorSocial" value="option1" checked>
+            Trabajador Social
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="charlas" value="option2">
+            Charlas
+          </label>
+        </div>
+      </div>
+    </div><!-- Card -->
+    <div class="card mb-3">
+      <div class="card-header">
+        Región
+      </div>
+      <div class="card-block">
+        <div class="form-group">
+        <label for="orden">Región</label>
+        <select class="custom-select w-100" id="orden">
+          <option selected value="1">Metro</option>
+          <option value="2">Norte</option>
+          <option value="3">Sur</option>
+          <option value="4">Este</option>
+          <option value="5">Oeste</option>
+        </select>
+        </div>
+        <div class="form-group">
+        <label for="orden">Centro</label>
+        <select class="custom-select w-100" id="orden">
+          <option selected value="1">San Juan</option>
+          <option value="2">Nombre Centro 2</option>
+          <option value="3">Nombre Centro 3</option>
+          <option value="4">Nombre Centro 4</option>
+        </select>
+        </div>
+        <div class="form-group">
+        <label for="orden">Trabajador Social</label>
+        <select class="custom-select w-100" id="orden">
+          <option selected value="1">María Perez</option>
+          <option value="2">Antonio Rodríguez</option>
+          <option value="3">José Lopez</option>
+          <option value="4">Ana María González</option>
+        </select>
+        </div>
+      </div>
+    </div><!-- Card -->
+    <div class="card mb-3">
+      <div class="card-header">
+        Citas Asignadas
+      </div>
+      <div class="card-block">
+          <p>No hay citas Asignadas</p>
+          <p class="txt-grey">Seleccione horarios disponibles en el calendario</p>
+          <button type="button" class="btn btn-primary btn-block disabled">Primary</button>
+          <button type="button" class="btn btn-link btn-block">Volver al Registro</button>
+      </div>
+    </div><!-- Card -->
+  </div>
+  <!-- Contenedor Calendario -->
+  <div class="col">
+    <div class="card mb-3">
+      <div class="card-header">
+        Asignar Citas | Calendario Trabajador Social. Usuario: Pedro Perez
+      </div>
+      <div class="card-block calendario-opciones">
+        <div class="row">
+          <div class="col">
+            <button class="btn btn-secondary">HOY</button> <button class="btn btn-secondary"><</button> <button class="btn btn-secondary">></button> ENERO 2018
+          </div>
+          <div class="col text-right">
+            <button class="btn btn-link active">MES</button>
+            <button class="btn btn-link">SEMANA</button>
+            <button class="btn btn-link">DIA</button>
+          </div>
+        </div>        
+      </div>
+      <div>
+        <!-- comienzo calendario -->
+        
+        <div class="calendario">
+      
+        <div class="card-group"><!-- Semana -->
+          <div class="card dia-libre">
+            <div class="card-header">
+              DOM <br>
+              <span class="dia">31</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              LUN <br>
+              <span class="dia">1</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              MAR <br>
+              <span class="dia">2</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              MIE <br>
+              <span class="dia">3</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              JUE <br>
+              <span class="dia">4</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              VIE <br>
+              <span class="dia">5</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              SAB <br>
+              <span class="dia">6</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+        </div> <!-- Card-Group -->
+
+
+
+        <div class="card-group"><!-- Semana -->
+          <div class="card dia-libre">
+            <div class="card-header">
+              <span class="dia">7</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia">8</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia">9</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia">10</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia">11</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia">12</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia">13</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+        </div> <!-- Card-Group -->
+
+
+        <div class="card-group"><!-- Semana -->
+          <div class="card dia-libre">
+            <div class="card-header">
+              <span class="dia">14</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia">15</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia">16</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia actual">17</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia">18</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia">19</span>
+            </div>
+            <div class="card-block">
+              <div class="item ts-disponible"><a href="">10:30 - 11:30. P. Paredes</a></div>
+              <div class="item ts-disponible"><a href="">10:30 - 11:30. M. Molina</a></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia">20</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+        </div> <!-- Card-Group -->
+
+        <div class="card-group"><!-- Semana -->
+          <div class="card dia-libre">
+            <div class="card-header">
+              <span class="dia">21</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia">22</span>
+            </div>
+            <div class="card-block">
+              <div class="item ts-disponible"><a href="">10:30 - 11:30. P. Paredes</a></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia">23</span>
+            </div>
+            <div class="card-block">
+              <div class="item ts-disponible"><a href="">10:30 - 11:30. P. Paredes</a></div>
+              <div class="item ts-disponible"><a href="">10:30 - 11:30. M. Molina</a></div>              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia">24</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card dia-libre">
+            <div class="card-header">
+              <span class="dia">25</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia">26</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia">27</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+        </div> <!-- Card-Group -->
+
+
+        <div class="card-group"><!-- Semana -->
+          <div class="card dia-libre">
+            <div class="card-header">
+              <span class="dia">28</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia">29</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia">30</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia">31</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia">1</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia">2</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <span class="dia">3</span>
+            </div>
+            <div class="card-block">
+              
+            </div>
+          </div>
+        </div> <!-- Card-Group -->
+
+
+        </div>
+      </div>
+    </div><!-- Card -->
+  </div>
+</div>
+
+ 
+</div><!-- container-fluid -->
+
+<!-- BootStrap and Jquery -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+</body>
+</html>

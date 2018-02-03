@@ -1,1 +1,115 @@
-/*Bootstrap Overide*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+/*
+	Bootstrap Overide
+
+*/
+
+/*  
+
+	General. 
+
+*/
+
+html {
+	background-color: #F8FBF8;
+}
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+	color: #212121;
+}
+.main {
+	background-color: #F8FBF8;
+}
+
+
+/*
+
+    Header 
+
+*/
+
+header.main {
+	background-color: #FFF;
+	margin-bottom: 30px;
+	-webkit-box-shadow: 0 2px 9px 0 rgba(0,0,0,0.06);
+	        box-shadow: 0 2px 9px 0 rgba(0,0,0,0.06);
+}
+.brand img {
+	padding: 15px 50px 25px 50px;
+}
+
+
+
+/*
+
+
+	Utilitarios 
+
+
+*/
+
+.txt-grey {
+	color: #999999;
+}
+
+
+
+
+/*
+
+    CALENDARIO 
+
+*/
+
+.calendario .card {
+	border-radius: 0;
+	border-color:#EEE;
+	min-height: 150px;
+}
+.calendario-opciones {
+	background-color: #F6F6F6;
+}
+.calendario-opciones .col {
+}
+
+.calendario .card-header {
+	background-color: transparent;
+	border: none;
+	font-weight: bold;
+	font-size: .9em;
+	padding: 9px 15px;
+}
+.calendario .card-block {
+	padding: 0px 5px 5px 5px;
+	font-size: .65em;
+}
+
+.calendario .dia-libre {
+	background-color: #FAFAFA;
+}
+.calendario .dia-libre .card-header {
+	color:#C9C9C9;
+}
+.calendario .dia.actual {
+	display: inline-block;
+	height: 27px;
+	width: 27px;
+	border-radius: 27px;
+	background-color: #3498DB;
+	color: #FFF;
+	text-align: center;
+	line-height: 25px;
+}
+.calendario .item a {
+	display: block;
+	background: #D5EB98;
+	border: 1px solid #74A375;
+	border-radius: 6px;
+	padding: 0 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #212121;
+}
+.calendario .item {
+	margin-bottom: 5px;
+}
