@@ -17,22 +17,47 @@
 
 <body>
 <div class="container-fluid">
-<nav>
-	<ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Active cambiado</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#">Disabled</a>
-  </li>
-</ul>
-</nav>
+<header class="row align-items-end main">
+    <div class="col-sm-auto">
+            <div class="brand">
+        <img src="images/assmca-logo.svg" alt="ASSMCA">
+      </div>
+    </div>
+    <div class="col">
+      <nav>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Recepción y Citas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Recaudos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Charlas Grupales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reportes</a>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link" href="#">Administración</a>
+        </li>
+      </ul>
+    </nav>  
+    </div>
+    <div class="col-2">
+      <ul class="nav nav-pills justify-content-end">
+        <li class="nav-item dropdown"">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Pablo Paredes <small>Administrador</small></a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Opción 1</a>
+              <a class="dropdown-item" href="#">Opción 2</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Opción 3</a>
+            </div>
+        </li>
+      </ul>
+    </div>
+  </header>
 
 
 <div class="row">
@@ -49,64 +74,64 @@
     <table class="table table-responsive table-hover">
       <thead>
         <tr>
-          <th>Seguro Social</th>
-          <th>Identificación</th>
-          <th>Nombre y Apellido</th>
-          <th>Fecha de Nacimiento</th>
+          <th><strong>Seguro Social</strong></th>
+          <th><strong>Identificación</strong></th>
+          <th><strong>Nombre y Apellido</strong></th>
+          <th><strong>Fecha de Nacimiento</strong></th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>123456892</td>
-          <td>166678</td>
-          <td>Pedro Perez</td>
+          <td><a href="#">123456892</a></td>
+          <td><a href="#">166678</a></td>
+          <td><a href="#">Pedro Perez</a></td>
           <td>01/25/1983</td>
         </tr>
         <tr>
-          <td>123456892</td>
-          <td>166678</td>
-          <td>Pedro Perez</td>
+          <td><a href="#">123456892</a></td>
+          <td><a href="#">166678</a></td>
+          <td><a href="#">Pedro Perez</a></td>
           <td>01/25/1983</td>
         </tr>
         <tr>
-          <td>123456892</td>
-          <td>166678</td>
-          <td>Pedro Perez</td>
-          <td>01/25/1983</td>
-        </tr>
-
-        <tr>
-          <td>123456892</td>
-          <td>166678</td>
-          <td>Pedro Perez</td>
+          <td><a href="#">123456892</a></td>
+          <td><a href="#">166678</a></td>
+          <td><a href="#">Pedro Perez</a></td>
           <td>01/25/1983</td>
         </tr>
 
         <tr>
-          <td>123456892</td>
-          <td>166678</td>
-          <td>Pedro Perez</td>
+          <td><a href="#">123456892</a></td>
+          <td><a href="#">166678</a></td>
+          <td><a href="#">Pedro Perez</a></td>
           <td>01/25/1983</td>
         </tr>
 
         <tr>
-          <td>123456892</td>
-          <td>166678</td>
-          <td>Pedro Perez</td>
+          <td><a href="#">123456892</a></td>
+          <td><a href="#">166678</a></td>
+          <td><a href="#">Pedro Perez</a></td>
           <td>01/25/1983</td>
         </tr>
 
         <tr>
-          <td>123456892</td>
-          <td>166678</td>
-          <td>Pedro Perez</td>
+          <td><a href="#">123456892</a></td>
+          <td><a href="#">166678</a></td>
+          <td><a href="#">Pedro Perez</a></td>
           <td>01/25/1983</td>
         </tr>
 
         <tr>
-          <td>123456892</td>
-          <td>166678</td>
-          <td>Pedro Perez</td>
+          <td><a href="#">123456892</a></td>
+          <td><a href="#">166678</a></td>
+          <td><a href="#">Pedro Perez</a></td>
+          <td>01/25/1983</td>
+        </tr>
+
+        <tr>
+          <td><a href="#">123456892</a></td>
+          <td><a href="#">166678</a></td>
+          <td><a href="#">Pedro Perez</a></td>
           <td>01/25/1983</td>
         </tr>
       </tbody>
@@ -176,12 +201,10 @@
   
 
   <div class="row">
-    <div class="col-md-6">
-      <legend>
-      Buscar por
-    </legend>
+    <div class="col-md-4">      
+      <strong>Buscar por</strong>    
     </div>
-    <div class="col-md-6">
+    <div class="col-md-8 text-right">
       <span class="small">Escribe un parámetro para tu búsqueda</span>
     </div>
   </div>
