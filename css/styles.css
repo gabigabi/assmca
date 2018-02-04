@@ -27,6 +27,9 @@ body {
 	background-color: #F8FBF8;
 }
 
+a {
+	color:#0C7CC0; 
+}
 /*
 
     Header 
@@ -56,7 +59,16 @@ header.main {
 .txt-grey {
 	color: #999999;
 }
+a.txt-grey {
+	color: #999999;
+}
+.bb {
+	border-bottom: 1px solid #EEEEEE;
+}
 
+.bt {
+	border-top: 1px solid #EEEEEE;
+}
 
 /*
 
@@ -76,6 +88,76 @@ body.login .container-fluid {
 	background-color: transparent;
 }
 
+.logo-login img {
+		padding-top: 60px;
+		padding-bottom: 40px;
+}
+
+
+
+
+/*
+
+	FORMS
+
+*/
+
+label {
+	color: #666666;
+	font-size: .9em;
+}
+
+.form-control::-webkit-input-placeholder { color: #999; }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: #999; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: #999; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: #999; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: #999; }  /* Microsoft Edge */
+
+.form-control:disabled,
+input[disabled]
+ {
+	border: none;
+	background-color: #FFF;
+	font-weight: bold;
+	color:#686868;
+}
+
+/*
+
+	BUTTONS 
+
+*/
+
+.btn {
+	text-transform: uppercase;
+	border-radius: 2px;
+	padding: 15px;
+	font-size: .95em;
+}
+.btn-primary {
+	background: #3498DB;
+	border-color: #3498DB;
+}
+
+.btn-secondary {
+	color: #666666;
+}
+
+
+
+
+
+/*
+
+    TABLES 
+
+
+*/
+
+.table {
+	font-size: .8em;
+} 
+
 
 /*
 
@@ -84,10 +166,53 @@ body.login .container-fluid {
 */
 .card {
 	border-color:#FFF176;
+	background-color: rgba(255,255,255,.6);
 }
 .card-header {
 	background-color: #FFF176;
 }
+.card-subheader {
+	background-color: #F6F6F6;
+	padding: 15px;
+	color: #A0A0A0;
+}
+
+.card-menu {
+	background: rgba(255,255,255,0.67);
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.25);
+	border-radius: 2px;
+	border: 1px solid #FFF176;
+	min-height: 250px;
+	color: #B8B8B8;
+}
+
+.card-menu.disabled {
+	opacity: .5;
+	border-color: #FDF7BC;
+}
+
+.card-menu a.disabled  {
+	color: #B8B8B8;
+}
+
+/*
+
+
+	LIST GROUPS
+
+
+
+*/
+
+.slim .list-group-item {
+	background-color: transparent;
+	border-right: none;
+	border-left: none;
+	border-color: #EEEEEE;
+	font-size: .85em;
+	padding: 0.45rem 1.25rem;
+}
+
 
 /*
 

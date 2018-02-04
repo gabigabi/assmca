@@ -17,7 +17,7 @@
 
 <body>
 <div class="container-fluid">
-<header class="row align-items-end main">
+  <header class="row align-items-end main">
     <div class="col-sm-auto">
             <div class="brand">
         <img src="images/assmca-logo.svg" alt="ASSMCA">
@@ -27,13 +27,13 @@
       <nav>
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Recepción y Citas</a>
+          <a class="nav-link active" href="entrada.html">Recepción y Citas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Recaudos</a>
+          <a class="nav-link" href="recaudos-busqueda-usuario.html">Recaudos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Charlas Grupales</a>
+          <a class="nav-link" href="charlas-grupales.html">Charlas Grupales</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Reportes</a>
@@ -68,33 +68,29 @@
   <div class="card-header">
     Búsqueda | Usuario con Orden Judicial
   </div>
+  <div class="card-subheader">
+    Parámetros de Búsqueda: Pedro Pérez
+  </div>
   <div class="card-block">
-    <h6 class="card-subtitle mb-2">Parámetros de Búsqueda: Pedro Pérez</h6>
-
-
-    <div class="NonResult">Ningún usuario coincide con su búsqueda. <a href="#">Crear Cuenta Nueva</a></div>
-
-
-
-
+    <p class="text-center pt-4 pb-4">Ningún usuario coincide con su búsqueda. <a href="nuevo-usuario.html">Crear Cuenta Nueva</a></p>
   </div><!-- card-body -->
 </div><!-- Card -->
 
 </div>
 
 <div class="col-md-4">
-  <button type="button" class="btn btn-secondary btn-lg btn-block">Crear Nueva Cuenta</button>
 
+  <button type="button" class="btn btn-secondary btn-lg btn-block mb-4">Crear Nueva Cuenta</button>
 
-  <div class="card">
+  <div class="card mb-4">
   <div class="card-header">
     Nueva Búsqueda
   </div>
   <div class="card-block">
     
     <form>
-    <fieldset class="form-group">
-      <legend>Iniciar Búsqueda</legend>
+    <fieldset class="form-group bb pb-4 mb-4">
+      <p><strong>Iniciar Búsqueda</strong></p>
       <div class="form-check">
         <label class="form-check-label">
           <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
@@ -116,7 +112,7 @@
     </fieldset>
   
 
-  <div class="row">
+  <div class="row mb-4">
     <div class="col-md-4">      
       <strong>Buscar por</strong>    
     </div>
@@ -150,7 +146,7 @@
     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ej. Doe">
   </div>
 
-  <button type="submit" class="btn btn-primary">Buscar</button>
+  <button type="submit" class="btn btn-primary mt-4 mb-4">Buscar</button>
 
 
 

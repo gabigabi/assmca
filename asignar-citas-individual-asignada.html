@@ -18,50 +18,6 @@
 <body>
 
 <!-- Modal -->
-<div class="modal fade" id="modal-orden-jucicial" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Asignar Número de Orden Judicial</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Este usuario <strong>tiene dos (2)</strong> Órdenes Judiciales Activas</p>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="ingresar-orden-judicial">Ingresar Nueva Orden Judicial</label>
-              <input type="text" class="form-control" id="ingresar-orden-judicial" placeholder="OE: 2015-21">
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            
-            <div class="form-group">
-                <label for="asignar-orden-judicial-existente">Asignar con Orden Judicial Existente</label>
-                <select class="form-control" id="asignar-orden-judicial-existente">
-                  <option>Seleccione</option>
-                  <option>Orden</option>
-                  <option>Orden</option>
-                </select>
-              </div>
-
-
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-          <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Aceptar</button>
-          <button type="button" class="btn btn-secondary btn-lg" data-dismiss="modal">Cancelar</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Modal -->
 <form>
 <div class="modal fade" id="asignar-citas-confirmacion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
@@ -78,7 +34,7 @@
         <p>Trabajador Social: Pedro Perez</p>
       </div>
       <div class="modal-footer">
-          <a href="asignar-citas-individual-asignada.html" class="btn btn-primary btn-lg">Aceptar</a>
+          <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Aceptar</button>
           <button type="button" class="btn btn-secondary btn-lg" data-dismiss="modal">Cancelar</button>
       </div>
     </div>
@@ -203,10 +159,16 @@
       <div class="card-header">
         Citas Asignadas
       </div>
+      <ul class="list-group slim">
+        <li class="list-group-item justify-content-between">
+          Jueves 01/26/2017 <br>
+          10:30am a 11:30am <br>
+          Trabajador Social
+          <span><img src="images/trash.png" alt=""></span>
+        </li>
+      </ul>
       <div class="card-block">
-          <p>No hay citas Asignadas</p>
-          <p class="txt-grey">Seleccione horarios disponibles en el calendario</p>
-          <button type="button" class="btn btn-primary btn-block disabled">Lista de Documentos</button>
+          <a href="imprimir-documentos.html" class="btn btn-primary btn-block">Lista de Documentos</a>
           <a href="nuevo-confirmacion.html" class="btn btn-link btn-block">Volver al Registro</a>
       </div>
     </div><!-- Card -->
@@ -564,15 +526,7 @@
     <script>
     $( document ).ready(function() {
 
-        $('#modal-orden-jucicial').modal()
-
-        $("#btnshowhide").click(function(){
-            
-        });
-
     });
-
- 
     </script>
 
 </body>

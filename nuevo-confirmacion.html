@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Nuevo Usuario - Confirmación</title>
+  <title>Nuevo Usuario</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="css/styles.css">
@@ -25,15 +25,16 @@
     </div>
     <div class="col">
       <nav>
+      <nav>
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Recepción y Citas</a>
+          <a class="nav-link active" href="entrada.html">Recepción y Citas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Recaudos</a>
+          <a class="nav-link" href="recaudos-busqueda-usuario.html">Recaudos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Charlas Grupales</a>
+          <a class="nav-link" href="charlas-grupales.html">Charlas Grupales</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Reportes</a>
@@ -42,7 +43,7 @@
           <a class="nav-link" href="#">Administración</a>
         </li>
       </ul>
-    </nav>  
+    </nav>    
     </div>
     <div class="col-2">
       <ul class="nav nav-pills justify-content-end">
@@ -59,19 +60,20 @@
     </div>
   </header>
 
-<form>
-<div class="card">
+<form action="asignar-citas-individual.html">
+<div class="card mb-4">
   <div class="card-header">
     Registro de nueva cuenta
   </div>
+
   <div class="card-block">
 
-    <div class="alert alert-success" role="alert">
+    <div class="alert alert-success mb-4" role="alert">
       El usuario ha sido registrado con éxito
     </div>
 
-  <div class="row">
-    <div class="col-md-2">
+  <div class="row bb pb-4 mb-4">
+    <div class="col-md-2 text-right">
       <strong>Documentos</strong>
     </div>
 
@@ -124,6 +126,50 @@
         </div><!-- col -->
 
 
+        <div class="col-md-3">
+
+            <div class="form-group">
+              <label for="n-seguro-social">ID Ley 22</label>
+              <input type="text" class="form-control" id="n-seguro-social" placeholder="Ej. 123456789" disabled>
+            </div>
+            
+        </div><!-- col -->
+
+        <div class="col-md-3">
+
+            <div class="form-group">
+              <label for="n-seguro-social">Expediente</label>
+              <input type="text" class="form-control" id="n-seguro-social" placeholder="Ej. 123456789" disabled>
+            </div>
+            
+        </div><!-- col -->
+
+        <div class="col-md-3">
+
+            <div class="form-group">
+              <label for="n-seguro-social">Orden</label>
+              <input type="text" class="form-control" id="n-seguro-social" placeholder="Ej. 123456789" disabled>
+            </div>
+            
+        </div><!-- col -->
+
+        <div class="col-md-3">
+
+            <div class="form-group">
+              <label for="n-seguro-social">Querella</label>
+              <input type="text" class="form-control" id="n-seguro-social" placeholder="Ej. 123456789" disabled>
+            </div>
+            
+        </div><!-- col -->
+
+        <div class="col-md-3">
+
+            <div class="form-group">
+              <label for="n-seguro-social">Caso Criminal</label>
+              <input type="text" class="form-control" id="n-seguro-social" placeholder="Ej. 123456789" disabled>
+            </div>
+            
+        </div><!-- col -->
 
       </div>
     </div><!-- col-9 -->
@@ -133,8 +179,8 @@
 
 
 
-    <div class="row">
-    <div class="col-md-2">
+    <div class="row pb-4 mb-4 bb">
+    <div class="col-md-2 text-right">
       <strong>Identificación</strong>
     </div>
 
@@ -162,7 +208,7 @@
         <div class="col-md-3">
 
             <div class="form-group">
-              <label for="primer-apellido">Primer Apellido</label>
+              <label for="primer-apellido">Apellido Paterno</label>
               <input type="text" class="form-control" id="primer-apellido" placeholder="Ej. Perez" disabled>
             </div>
             
@@ -172,7 +218,7 @@
         <div class="col-md-3">
 
             <div class="form-group">
-              <label for="segundo-apellido">Segundo Apellido</label>
+              <label for="segundo-apellido">Apellido Materno</label>
               <input type="text" class="form-control" id="segundo-apellido" placeholder="Ej. Perez" disabled>
             </div>
             
@@ -187,13 +233,22 @@
 
 
 
-    <div class="row">
-    <div class="col-md-2">
+    <div class="row bb pb-4 mb-4">
+    <div class="col-md-2 text-right">
       <strong>Otros Datos</strong>
     </div>
 
     <div class="col-md-10">
       <div class="row">
+
+        <div class="col-md-3">
+
+            <div class="form-group">
+              <label for="segundo-apellido">Apodo</label>
+              <input type="text" class="form-control" id="segundo-apellido" placeholder="Ej. Joe" disabled>
+            </div>
+            
+        </div><!-- col -->
 
         <div class="col-md-3">
 
@@ -209,8 +264,7 @@
             <div class="form-group">
                 <label for="sexo">Sexo</label>
                 <select class="form-control" id="sexo" disabled>
-                  <option>Seleccione</option>
-                  <option>Femenino</option>
+                  <option selected>Femenino</option>
                   <option>Masculino</option>
                 </select>
               </div>
@@ -222,7 +276,7 @@
             <div class="form-group">
                 <label for="grupo-etnico">Grupo Étnico</label>
                 <select class="form-control" id="grupo-etnico" disabled>
-                  <option>Seleccione</option>
+                  <option>AAAAA</option>
                   <option>Blanco</option>
                   <option>Moreno</option>
                 </select>
@@ -234,6 +288,7 @@
         <div class="col-md-3">
 
             <div class="form-check">
+              <p>&nbsp;</p>
               <label class="form-check-label">
                 <input type="checkbox" class="form-check-input" disabled>
                 Veterano
@@ -251,14 +306,99 @@
             
         </div><!-- col -->
 
+        <div class="col-md-3">
+
+            <div class="form-group">
+              <label for="segundo-apellido">Teléfono 1</label>
+              <input type="text" class="form-control" id="tlf1" placeholder="Ej. 99999999" disabled>
+            </div>
+            
+        </div><!-- col -->
 
 
+        <div class="col-md-3">
+
+            <div class="form-group">
+              <label for="segundo-apellido">Teléfono 2</label>
+              <input type="text" class="form-control" id="tlf2" placeholder="Ej. 99999999" disabled>
+            </div>
+            
+        </div><!-- col -->
+
+        <div class="col-md-3">
+
+            <div class="form-group">
+              <label for="segundo-apellido">Tlf Famliar más cercano</label>
+              <input type="text" class="form-control" id="tlf-familiar" placeholder="Ej. 99999999" disabled>
+            </div>
+            
+        </div><!-- col -->
+
+        <div class="col-md-3">
+
+            <div class="form-group">
+              <label for="segundo-apellido">Tlf Notificar Citas</label>
+              <input type="text" class="form-control" id="tlf-citas" placeholder="Ej. 99999999" disabled>
+            </div>
+            
+        </div><!-- col -->
 
     </div>
     </div><!-- col-9 -->
 
     </div><!-- row -->
 
+   <div class="row pb-4 mb-4 bb">
+    <div class="col-md-2 text-right">
+      <strong>Dirección</strong>
+    </div>
+
+    <div class="col-md-10">
+      <div class="row">
+
+        <div class="col-md-3">
+
+        <div class="form-group">
+          <label for="primer-nombre">Dirección Linea 1</label>
+          <input type="text" class="form-control" id="primer-nombre" placeholder="Ej. Calle / Avenida  " disabled>
+        </div>
+        
+        </div><!-- col -->
+
+        <div class="col-md-3">
+
+            <div class="form-group">
+              <label for="segundo-nombre">Dirección Linea 2</label>
+              <input type="text" class="form-control" id="segundo-nombre" placeholder="Ej. Casa / Edif No." disabled>
+            </div>
+            
+        </div><!-- col -->
+
+        <div class="col-md-3">
+
+            <div class="form-group">
+              <label for="primer-apellido">Municipio</label>
+              <input type="text" class="form-control" id="primer-apellido" placeholder="Ej. San Juan" disabled>
+            </div>
+            
+        </div><!-- col -->
+
+
+        <div class="col-md-3">
+
+            <div class="form-group">
+              <label for="segundo-apellido">Código Postal</label>
+              <input type="text" class="form-control" id="segundo-apellido" placeholder="Ej. 0000" disabled>
+            </div>
+            
+        </div><!-- col -->
+
+
+
+      </div>
+    </div><!-- col-9 -->
+
+    </div><!-- row -->
 
 
 <div class="row">
@@ -266,20 +406,12 @@
     </div>
 
     <div class="col-md-10">
-          <button type="button" class="btn btn-primary btn-lg">Asignar Cita</button>
-          <button type="button" class="btn btn-secondary btn-lg">Corregir</button>
+          <button class="btn btn-primary btn-lg pr-4 pl-4 mr-4" type="submit">Asignar Cita</button>
+          <a href="nuevo-usuario.html" class="btn btn-secondary btn-lg">Corregir</a>
 
     </div><!-- col-9 -->
 
 </div><!-- row -->
-
-
-
-
-
-
-
-
 
 
   </div><!-- card-block -->

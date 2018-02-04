@@ -27,13 +27,13 @@
       <nav>
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Recepción y Citas</a>
+          <a class="nav-link active" href="entrada.html">Recepción y Citas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Recaudos</a>
+          <a class="nav-link" href="recaudos-busqueda-usuario.html">Recaudos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Charlas Grupales</a>
+          <a class="nav-link" href="charlas-grupales.html">Charlas Grupales</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Reportes</a>
@@ -69,50 +69,58 @@
     <div class="row">
       <div class="col-md-3">
 
-        <ul class="list-unstyled">
-          <li><strong>IUP:</strong> 777777</li>
-          <li><strong>Episodio:</strong> 99999</li>
-          <li><strong>Pasaporte:</strong> 99999</li>
-          <li><strong>Licencia:</strong> 777777</li>
-          <li><strong>Seguro Social:</strong> 777777</li>
+
+        <ul class="list-group mb-4 pb-4 slim">
+          <li class="list-group-item justify-content-between">
+            IUP
+            <span>777777</span>
+          </li>
+          <li class="list-group-item justify-content-between">
+            Episodio
+            <span>333333</span>
+          </li>
+          <li class="list-group-item justify-content-between">
+            Licencia
+            <span>1111111</span>
+          </li>
+          <li class="list-group-item justify-content-between">
+            Seguro Social
+            <span>99999999</span>
+          </li>
+          <li class="list-group-item justify-content-between">
+            <strong>Estatus</strong>
+            <span><strong>Caso Abierto</strong></span>
+          </li>
         </ul>
 
-        <div class="list-div">
-          <strong>Estatus:</strong> Caso Abierto
-        </div>
+
+        <p class="mb-4">Citas:</p>
 
 
-        Citas:
+        <ul class="list-group slim mb-4">
+          <li class="list-group-item justify-content-between">
+            <strong>01/12/2018 10:30 a 11:30</strong><br>
+            Trabajador Social Pepe Perez
+            <span class="badge badge-default badge-pill">Asistió</span>
+          </li>
+          <li class="list-group-item justify-content-between">
+            <strong>01/12/2018 10:30 a 11:30</strong><br>
+            Trabajador Social Rosa Gómez
+            <span class="badge badge-default badge-pill">No asistió</span>
+          </li>
+          <li class="list-group-item justify-content-between">
+            <strong>01/12/2018 10:30 a 11:30</strong>
+            <br>Alcoholismo Nivel 1
+            <span class="badge badge-default badge-pill">Asignado</span>
+          </li>
+          <li class="list-group-item justify-content-between">
+            <strong>01/12/2018 10:30 a 11:30</strong>
+            <br>Alcoholismo Nivel 2
+            <span class="badge badge-default badge-pill">Asignado</span>
+          </li>
+        </ul>
 
-        <div class="row success">
-          <div class="col-md-4"><strong>Asistió</strong></div>
-          <div class="col-md-8"><strong>01/12/2018 10:30 a 11:30</strong> <p>Trabajador Social Pepe Perez</p></div>
-        </div>
-
-        <div class="row alert">
-          <div class="col-md-4"><strong>No asistió</strong></div>
-          <div class="col-md-8"><strong>01/12/2018 10:30 a 11:30</strong> <p>Trabajador Social Rosa Gómez</p></div>
-        </div>
-
-        <div class="row success">
-          <div class="col-md-4"><strong>Asistió</strong></div>
-          <div class="col-md-8"><strong>01/12/2018 10:30 a 11:30</strong> <p>Trabajador Social Rosa Gómez</p></div>
-        </div>
-
-        <div class="row info">
-          <div class="col-md-4"><strong>Asignado</strong></div>
-          <div class="col-md-8"><strong>01/20/2018</strong>  <span>Grupo A</span></div>
-        </div>
-
-        <div class="row info mb-3">
-          <div class="col-md-4"><strong>Asignado</strong></div>
-          <div class="col-md-8"><strong>01/20/2018</strong>  <span>Grupo B</span></div>
-        </div>
-
-      
-
-        <button type="button" class="btn btn-secondary btn-lg btn-block">Cerra Sesión Usuario</button>
-
+        <a href="entrada.html" class="btn btn-secondary btn-block mb-4">Cerrar Sesión Usuario</a>
 
       </div>
 
@@ -120,22 +128,22 @@
 
         <div class="row">
           <div class="col-md-4">   
-            <div class="card text-center mb-3">
+            <div class="card text-center mb-3 card-menu">
               <div class="card-block">
                 <a href="#">
-                   <img class="card-img-top" src="images/editar-usuario-registrado.png" alt="Card image cap">
+                   <img class="mt-4 mb-4" src="images/editar-usuario-registrado.png" alt="Card image cap">
                 </a>
-                <h4 class="card-title"><a href="">Editar Registro de Usuario</a></h4>
+                <h4 class="card-title"><a href="cambiar-datos-usuario-existente.html">Editar Registro de Usuario</a></h4>
               </div>
             </div>         
           </div><!-- col-4 -->
 
           <div class="col-md-4">    
 
-            <div class="card text-center mb-3">
+            <div class="card text-center mb-3 card-menu">
               <div class="card-block">
                 <a href="#">
-                   <img class="card-img-top" src="images/recepcion-documentos.png" alt="Card image cap">
+                   <img class="mt-4 mb-4" src="images/recepcion-documentos.png" alt="Card image cap">
                 </a>
                 <h4 class="card-title"><a href="#">Recepción Documentos</a></h4>
               </div>
@@ -145,10 +153,10 @@
 
           <div class="col-md-4"> 
 
-            <div class="card  text-center mb-3">            
+            <div class="card  text-center mb-3 card-menu">            
             <div class="card-block">
               <a href="#">
-                <img class="card-img-top" src="images/calendario-citas-trabajador-social.png" alt="Card image cap">
+                <img class="mt-4 mb-4" src="images/calendario-citas-trabajador-social.png" alt="Card image cap">
               </a>
               <h4 class="card-title"><a href="#">Calendario Citas Trabajador Social</a></h4>
             </div>
@@ -158,10 +166,10 @@
 
           <div class="col-md-4"> 
 
-            <div class="card  text-center mb-3"> 
+            <div class="card  text-center mb-3 card-menu"> 
             <div class="card-block">
               <a href="#">
-              <img class="card-img-top" src="images/calendario-citas-charlas.png" alt="Card image cap">
+                <img class="mt-4 mb-4" src="images/calendario-citas-charlas.png" alt="Card image cap">
               </a>            
               <h4 class="card-title"><a href="#">Calendario Citas Charlas</a></h4>
             </div>
@@ -171,10 +179,10 @@
 
           <div class="col-md-4">
 
-          <div class="card  text-center mb-3"> 
+          <div class="card  text-center mb-3 card-menu"> 
             <div class="card-block">
               <a href="#">
-              <img class="card-img-top" src="images/recaudos.png" alt="Card image cap">
+                <img class="mt-4 mb-4" src="images/recaudos.png" alt="Card image cap">
               </a>            
               <h4 class="card-title"><a href="#">Recaudos</a></h4>
             </div>
@@ -184,12 +192,10 @@
 
           <div class="col-md-4">
 
-            <div class="card  text-center mb-3"> 
+            <div class="card  text-center mb-3 card-menu disabled"> 
             <div class="card-block">
-              <a href="#" class="disabled" aria-disabled="true">
-              <img class="card-img-top" src="images/cerrar-caso.png" alt="Card image cap">
-              </a>            
-              <h4 class="card-title"><a href="#" class="disabled" aria-disabled="true">Cerrar Caso</a></h4>
+                <img class="mt-4 mb-4" src="images/cerrar-caso.png" alt="Card image cap">          
+              <h4 class="card-title">Cerrar Caso</h4>
             </div>
           </div>
 
