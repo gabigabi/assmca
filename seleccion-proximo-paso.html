@@ -7,7 +7,7 @@
 
   <title>Próximo Paso</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
- <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/fontawesome-all.css">
   <link rel="stylesheet" href="css/styles.css">
 
   <!--[if lt IE 9]>
@@ -20,7 +20,7 @@
 <header class="row align-items-end main">
     <div class="col-sm-auto">
             <div class="brand">
-        <img src="images/assmca-logo.svg" alt="ASSMCA">
+         <a href="index.html"><img src="images/assmca-logo.svg" alt="ASSMCA"></a>
       </div>
     </div>
     <div class="col">
@@ -39,7 +39,7 @@
           <a class="nav-link" href="#">Reportes</a>
         </li>        
         <li class="nav-item">
-          <a class="nav-link" href="#">Administración</a>
+          <a class="nav-link" href="cierre-caso.html">Administración</a>
         </li>
       </ul>
     </nav>  
@@ -91,6 +91,10 @@
             <strong>Estatus</strong>
             <span><strong>Caso Abierto</strong></span>
           </li>
+          <li class="list-group-item justify-content-between">
+            &nbsp;
+            <span><a href="">Ver Histórico</a></span>
+          </li>
         </ul>
 
 
@@ -120,7 +124,7 @@
           </li>
         </ul>
 
-        <a href="entrada.html" class="btn btn-secondary btn-block mb-4">Cerrar Sesión Usuario</a>
+        <a href="entrada.html" class="btn btn-secondary btn-block mb-4">Salir del Registro de Usuario</a>
 
       </div>
 
@@ -130,9 +134,14 @@
           <div class="col-md-4">   
             <div class="card text-center mb-3 card-menu">
               <div class="card-block">
-                <a href="#">
-                   <img class="mt-4 mb-4" src="images/editar-usuario-registrado.png" alt="Card image cap">
-                </a>
+                <p class="mt-4">
+                <a href="cambiar-datos-usuario-existente.html">
+                  <span class="fa-stack fa-3x">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-user fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>                  
+                </p>
                 <h4 class="card-title"><a href="cambiar-datos-usuario-existente.html">Editar Registro de Usuario</a></h4>
               </div>
             </div>         
@@ -142,10 +151,15 @@
 
             <div class="card text-center mb-3 card-menu">
               <div class="card-block">
-                <a href="#">
-                   <img class="mt-4 mb-4" src="images/recepcion-documentos.png" alt="Card image cap">
+                <p class="mt-4">
+                <a href="cargar-documentos.html">
+                  <span class="fa-stack fa-3x">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-inbox fa-stack-1x fa-inverse"></i>
+                  </span>
                 </a>
-                <h4 class="card-title"><a href="#">Recepción Documentos</a></h4>
+                </p>
+                <h4 class="card-title"><a href="cargar-documentos.html">Recibo de Documentos</a></h4>
               </div>
             </div> 
 
@@ -155,10 +169,14 @@
 
             <div class="card  text-center mb-3 card-menu">            
             <div class="card-block">
-              <a href="#">
-                <img class="mt-4 mb-4" src="images/calendario-citas-trabajador-social.png" alt="Card image cap">
-              </a>
-              <h4 class="card-title"><a href="#">Calendario Citas Trabajador Social</a></h4>
+              <p class="mt-4">
+              <a href="asignar-citas-individual.html">
+                  <span class="fa-stack fa-3x">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="far fa-calendar-alt fa-stack-1x fa-inverse"></i>
+                  </span>
+              </a></p>
+              <h4 class="card-title"><a href="asignar-citas-individual.html">Calendario Citas Trabajador Social</a></h4>
             </div>
           </div>
 
@@ -168,10 +186,15 @@
 
             <div class="card  text-center mb-3 card-menu"> 
             <div class="card-block">
-              <a href="#">
-                <img class="mt-4 mb-4" src="images/calendario-citas-charlas.png" alt="Card image cap">
-              </a>            
-              <h4 class="card-title"><a href="#">Calendario Citas Charlas</a></h4>
+              <p class="mt-4">
+              <a href="asignar-citas-grupales.html">
+                  <span class="fa-stack fa-3x">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="far fa-calendar fa-stack-1x fa-inverse"></i>
+                    <i class="fas fa-users fa-stack fa-fix-sm fa-inverse"></i>
+                  </span>
+              </a> </p>           
+              <h4 class="card-title"><a href="asignar-citas-grupales.html">Calendario Citas Charlas</a></h4>
             </div>
             </div>
 
@@ -181,10 +204,14 @@
 
           <div class="card  text-center mb-3 card-menu"> 
             <div class="card-block">
-              <a href="#">
-                <img class="mt-4 mb-4" src="images/recaudos.png" alt="Card image cap">
-              </a>            
-              <h4 class="card-title"><a href="#">Recaudos</a></h4>
+              <p class="mt-4">
+              <a href="balance-pago-solo-saldo.html">
+                  <span class="fa-stack fa-3x">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="far fa-list-alt fa-stack-1x fa-inverse"></i>
+                  </span>
+              </a></p>           
+              <h4 class="card-title"><a href="balance-pago-solo-saldo.html">Recaudos</a></h4>
             </div>
           </div>
 
@@ -192,10 +219,16 @@
 
           <div class="col-md-4">
 
-            <div class="card  text-center mb-3 card-menu disabled"> 
+            <div class="card  text-center mb-3 card-menu"> 
             <div class="card-block">
-                <img class="mt-4 mb-4" src="images/cerrar-caso.png" alt="Card image cap">          
-              <h4 class="card-title">Cerrar Caso</h4>
+              <p class="mt-4">
+                <a href="cierre-caso.html">
+                  <span class="fa-stack fa-3x">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="far fa-check-square fa-stack-1x fa-inverse"></i>
+                  </span>
+              </a></p>          
+              <h4 class="card-title"><a href="cierre-caso.html">Cerrar Caso</a></h4>
             </div>
           </div>
 

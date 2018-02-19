@@ -7,7 +7,7 @@
 
   <title>Balance De Pago</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
- <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/fontawesome-all.css">
   <link rel="stylesheet" href="css/styles.css">
 
   <!--[if lt IE 9]>
@@ -16,33 +16,86 @@
 </head>
 
 <body>
+
+<!-- Modal -->
+<div class="modal fade" id="imprimir-recibo-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <form action="">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Recibo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+            <div class="row bb mb-3">
+              <div class="col-md-2 text-center">
+                <img src="images/logo-gob-puerto-rico.png">
+              </div>
+
+              <div class="col-md-8">
+                <p>Estado Libre Asociado de Puerto Rico
+                Administración de Servicios de Salud  Mental y Contra la Adicción             Administración Auxiliar de Prevención y Promoción de la Salud Mental</p>
+              </div>
+
+              <div class="col-md-2 text-center">
+                <img src="images/logo-assmca.png">
+              </div>
+            </div>
+
+
+              <ul class="list-unstyled ml-3">
+                <li><strong>Recibo # 1126587</strong></li>
+                <li><strong>Forma de Pago: Cash</strong></li>
+                <li><strong>Fecha: 6-jan-2018</strong></li>
+                <li><strong>Monto: 350 USD</strong></li>
+                <li><strong>Nombre: Pedro Perez</strong></li>
+                <li><strong>ID: 777-777-777</strong></li>
+              </ul>
+
+            <p class="ml-3">P.O Box 600000. Bayamon PR 8989999. Contactos 999999999
+              www.assmca.pr.gov ACUSE</p>
+
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-primary mr-3" data-dismiss="modal">Imprimir</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
 <div class="container-fluid">
 <header class="row align-items-end main">
     <div class="col-sm-auto">
             <div class="brand">
-        <img src="images/assmca-logo.svg" alt="ASSMCA">
+         <a href="index.html"><img src="images/assmca-logo.svg" alt="ASSMCA"></a>
       </div>
     </div>
     <div class="col">
       <nav>
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Recepción y Citas</a>
+          <a class="nav-link" href="entrada.html">Recepción y Citas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Recaudos</a>
+          <a class="nav-link active" href="recaudos-busqueda-usuario.html">Recaudos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Charlas Grupales</a>
+          <a class="nav-link" href="charlas-grupales.html">Charlas Grupales</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Reportes</a>
         </li>        
         <li class="nav-item">
-          <a class="nav-link" href="#">Administración</a>
+          <a class="nav-link" href="cierre-caso.html">Administración</a>
         </li>
       </ul>
-    </nav>  
+    </nav>   
     </div>
     <div class="col-2">
       <ul class="nav nav-pills justify-content-end">
@@ -60,154 +113,153 @@
   </header>
 
 
-<div class="card">
+<div class="card mb-5">
   <div class="card-header">
-    Documentos Impresión: Usuario: Pedro Perez
+    Balance de Cuenta. Usuario: Pedro Perez
   </div>
   <div class="card-block">
 
-    <form>
-    <table class="table table-responsive table-hover">
-      <thead>
-        <tr>
-          <th></th>
-          <th>Item</th>
-          <th></th>
-          <th>Monto</th>
-          <th>Estatus</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" id="alcohol-multiples-convicciones-tipo1" value="option1">
-              </label>
-            </div>
-          </th>
-          <td>Alcohol - Múltiples Convicciones Tipo 1</td>
-          <th></th>
-          <td>$310.00USD</td>
-          <td class="sucess">Pagada</td>
-          <th></th>
-        </tr>
-        
-        <tr>
-          <th scope="row">
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" id="alcohol-multiples-convicciones-tipo2" value="option2">
-              </label>
-            </div>
-          </th>
-          <td>Alcohol - Múltiples Convicciones Tipo 2</td>
-          <th></th>
-          <td>$310.00USD</td>
-          <td class="alert">Por pagar</td>
-          <th scope="row"><img src="images/ban-circle-symbol.png"></th>
-        </tr>
-
-        <tr>
-          <th scope="row">
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" id="alcohol-multiples-convicciones-tipo3" value="option3">
-              </label>
-            </div>
-          </th>
-          <td>Alcohol - Múltiples Convicciones Tipo 3</td>
-          <th></th>
-          <td>$310.00USD</td>
-          <td class="alert">Por pagar</td>
-          <th scope="row"><img src="images/ban-circle-symbol.png"></th>
-        </tr>
-
-        <tr>
-          <th></th>
-          <td></td>
-          <td><strong>Total por pagar</strong><br>3 charlas</td>
-          <td>$310.00USD</td>
-          <td></td>
-          <td></td>
-        </tr>
-
-        
-      </tbody>
-    </table>
-          
-
     <div class="row">
-    <div class="col-md-2">
-      <strong>Registrar Pago</strong>
-    </div>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-10">
 
-    <div class="col-md-10">
-      <div class="row">
-
-        <div class="col-md-3">
-
-              <div class="form-group">
-                <label for="sexo">Item a Pagar</label>
-                <select class="form-control" id="item-pagar">
-                  <option>Seleccione</option>
-                  <option>1</option>
-                  <option>2</option>
-                </select>
-              </div>
-        
-        </div><!-- col -->
-
-        <div class="col-md-3">
-
-            <div class="form-group">
-                <label for="sexo">Forma de Pago</label>
-                <select class="form-control" id="forma-pago">
-                  <option>Seleccione</option>
-                  <option>1</option>
-                  <option>2</option>
-                </select>
-              </div>
+        <table class="table table-hover mb-5">
+          <thead>
+            <tr>
+              <th width="50"></th>
+              <th>Item</th>
+              <th class="text-right">Monto</th>
+              <th width="100">Estatus</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row" class="text-center">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="alcohol-multiples-convicciones-tipo1" value="option1">
+                  </label>
+                </div>
+              </td>
+              <td>Alcohol - Múltiples Convicciones Tipo 1</td>
+              <td class="text-right">$310.00USD</td>
+              <td class="text-success">Pagada</td>
+              <td><a href="#" data-toggle="modal" data-target="#imprimir-recibo-modal" data-whatever="@getbootstrap"><span class="fas fa-print fa-lg"></span></a></td>
+            </tr>
             
-        </div><!-- col -->
+            <tr>
+              <td scope="row" class="text-center">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="alcohol-multiples-convicciones-tipo2" value="option2">
+                  </label>
+                </div>
+              </td>
+              <td>Alcohol - Múltiples Convicciones Tipo 2</td>
+              <td class="text-right">$310.00USD</td>
+              <td class="text-danger">Por pagar</td>
+              <td><a href=""><span class="fas fa-eraser  fa-lg"></span></a></td>
+            </tr>
 
-        <div class="col-md-3">
+            <tr>
+              <td scope="row" class="text-center">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="alcohol-multiples-convicciones-tipo3" value="option3">
+                  </label>
+                </div>
+              </td>
+              <td>Alcohol - Múltiples Convicciones Tipo 3</td>
+              <td class="text-right">$310.00USD</td>
+              <td class="text-danger">Por pagar</td>
+              <td><a href=""><span class="fas fa-eraser fa-lg"></span></a></a></td>
+            </tr>
 
-            <div class="form-group">
-              <label for="fecha-pago">Fecha de Pago</label>
-              <input type="text" class="form-control" id="fecha-pago" placeholder="Ej. 10/10/0000">
-            </div>
+            <tr>
+              <td></td>
+              <td class="text-right"><strong>Total por pagar</strong><br>3 charlas</td>
+              <td class="text-right">$310.00USD</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+          </tbody>
+        </table>
+
+
+       <form>
+        <div class="row mb-4 bt pt-4">
+        <div class="col-md-2">
+          <strong>Registrar Pago</strong>
+        </div>
+
+        <div class="col-md-10">
+          <div class="row">
+
+            <div class="col-md-4">
+
+                  <div class="form-group">
+                    <label for="sexo">Item a Pagar</label>
+                    <select class="form-control" id="item-pagar">
+                      <option>Seleccione</option>
+                      <option>1</option>
+                      <option>2</option>
+                    </select>
+                  </div>
             
-        </div><!-- col -->
+            </div><!-- col -->
+
+            <div class="col-md-4">
+
+                <div class="form-group">
+                    <label for="sexo">Forma de Pago</label>
+                    <select class="form-control" id="forma-pago">
+                      <option>Seleccione</option>
+                      <option>1</option>
+                      <option>2</option>
+                    </select>
+                  </div>
+                
+            </div><!-- col -->
+
+            <div class="col-md-4">
+
+                <div class="form-group">
+                  <label for="fecha-pago">Fecha de Pago</label>
+                  <input type="text" class="form-control" id="fecha-pago" placeholder="Ej. 10/10/0000">
+                </div>
+                
+            </div><!-- col -->
+
+          </div>
+        </div><!-- col-9 -->
+
+        </div><!-- row -->
+
+
+        <div class="row mb-4">
+              <div class="col-md-2">
+              </div>
+
+              <div class="col-md-10">
+
+                    <a href="" data-toggle="modal" data-target="#imprimir-recibo-modal" data-whatever="@getbootstrap" class="btn btn-primary mr-3">Generar Recibo</a>
+                    <a href="recaudos-busqueda-usuario.html" class="btn btn-secondary">Terminar</a>
+
+
+              </div><!-- col-9 -->
+
+          </div><!-- row -->
+      </form>
+
 
       </div>
-    </div><!-- col-9 -->
-
-    </div><!-- row -->
-
-
-    <div class="row">
-          <div class="col-md-2">
-          </div>
-
-          <div class="col-md-10">
-
-                <button type="button" class="btn btn-primary btn-lg">Generar Recibo</button>
-                <button type="button" class="btn btn-secondary btn-lg">Cancelar</button>
-
-
-          </div><!-- col-9 -->
-
-      </div><!-- row -->
-  </form>
-
+      <div class="col-lg-1"></div>
+    </div>
 
   </div><!-- card-block -->
 </div><!-- Card -->
-
-
-
 
  
 </div><!-- container-fluid -->

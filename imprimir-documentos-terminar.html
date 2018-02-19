@@ -20,26 +20,26 @@
 <header class="row align-items-end main">
     <div class="col-sm-auto">
             <div class="brand">
-        <img src="images/assmca-logo.svg" alt="ASSMCA">
+         <a href="index.html"><img src="images/assmca-logo.svg" alt="ASSMCA"></a>
       </div>
     </div>
     <div class="col">
       <nav>
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Recepción y Citas</a>
+          <a class="nav-link active" href="entrada.html">Recepción y Citas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Recaudos</a>
+          <a class="nav-link" href="recaudos-busqueda-usuario.html">Recaudos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Charlas Grupales</a>
+          <a class="nav-link" href="charlas-grupales.html">Charlas Grupales</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Reportes</a>
         </li>        
         <li class="nav-item">
-          <a class="nav-link" href="#">Administración</a>
+          <a class="nav-link" href="cierre-caso.html">Administración</a>
         </li>
       </ul>
     </nav>  
@@ -65,74 +65,74 @@
     Documentos Impresión. Usuario: Pedro Perez
   </div>
   <div class="card-block">
-    <div class="alert alert-success" role="alert">
-      La confirmación de la cita ha sido enviada por correo.
-    </div>
+   <form action="seleccion-proximo-paso.html">
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10 col-md-12">
+           <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Nombre del Documento</th>
+                  <th>Fecha de Revisión</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row" width="100" class="txt-center">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" id="recordatorio-citas" value="option1">
+                      </label>
+                    </div>
+                  </td>
+                  <td>Recordatorio de cita</td>
+                  <td>11-10-2018</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="txt-center">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" id="normas-procedimientos" value="option2">
+                      </label>
+                    </div>
+                  </td>
+                  <td>Normas y Procedimientos</td>
+                  <td>11-10-2018</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="txt-center">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" id="autorizacion-recibir-servicios" value="option3">
+                      </label>
+                    </div>
+                  </td>
+                  <td>Autorización para Recibir Servicios</td>
+                  <td>11-10-2018</td>
+                </tr>
 
-    <form>
-    <table class="table table-responsive table-hover">
-      <thead>
-        <tr>
-          <th></th>
-          <th>Nombre del Documento</th>
-          <th>Fecha de Revisión</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" id="recordatorio-citas" value="option1">
-              </label>
-            </div>
-          </th>
-          <td>Recordatorio de cita</td>
-          <td>11-10-2018</td>
-        </tr>
-        <tr>
-          <th scope="row">
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" id="normas-procedimientos" value="option2">
-              </label>
-            </div>
-          </th>
-          <td>Normas y Procedimientos</td>
-          <td>11-10-2018</td>
-        </tr>
-        <tr>
-          <th scope="row">
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" id="autorizacion-recibir-servicios" value="option3">
-              </label>
-            </div>
-          </th>
-          <td>Autorización para Recibir Servicios</td>
-          <td>11-10-2018</td>
-        </tr>
+                <tr>
+                  <td scope="row" class="txt-center">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" id="carta-derechos" value="option4">
+                      </label>
+                    </div>
+                  </td>
+                  <td>Carta de Derechos</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>          
+          <button type="sumbit" class="btn btn-primary mr-3">Registro Terminado</button>
+          <button type="button" class="btn btn-secondary mr-3">Imprimir Lista</button>
+          <button type="button" class="btn btn-secondary">Volver a Calendario</button>
 
-        <tr>
-          <th scope="row">
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" id="carta-derechos" value="option4">
-              </label>
-            </div>
-          </th>
-          <td>Carta de Derechos</td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
-
-          <button type="button" class="btn btn-primary btn-lg">Registro Terminado</button>
-          <button type="button" class="btn btn-secondary btn-lg">Imprimir Lista</button>
-          <button type="button" class="btn btn-secondary btn-lg">Volver a Calendario</button>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
     </form>
-
-
   </div><!-- card-block -->
 </div><!-- Card -->
 

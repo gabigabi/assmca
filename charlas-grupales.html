@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Asignar Citas (Individual)</title>
+  <title>Charlas Grupales</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
- <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/fontawesome-all.css">
   <link rel="stylesheet" href="css/styles.css">
 
   <!--[if lt IE 9]>
@@ -17,11 +17,141 @@
 
 <body>
 
+<!-- Modal -->
+
+<div class="modal fade" id="modal-crear-charla" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Crear nueva Charla</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="row bb pl-4 pr-4 pb-4 mb-4">
+            <div class="col">
+                <div class="form-group">
+                  
+                  <label for="fecha-charla">Fecha</label>
+                  <div class="input-group">
+                    <div class="input-group-addon"><span class="far fa-calendar-alt"></span></div>
+                    <input type="date" class="form-control" id="fecha-charla" placeholder="12/31/2018">                   
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                  <label for="hora-charla">Hora</label>
+                  <div class="input-group">
+                    <div class="input-group-addon"><span class="far fa-clock"></span>
+
+</div>
+                    <input type="text" class="form-control" id="hora-charla" placeholder="10:30am - 12:30pm">
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row pl-4 pr-4 pb-4 mb-4">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="tipo-charlas">Tipo Charlas</label>
+                <select class="form-control" id="tipo-charlas">
+                  <option selected>Seleccione</option>
+                  <option>Alcohol</option>
+                  <option>Drogas</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="nivel-charlas">Nivel</label>
+                <select class="form-control" id="nivel-charlas">
+                  <option selected>Seleccione</option>
+                  <option>1era Convicción</option>
+                  <option>Múltiples Convicciones</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="tipo-numero-charla">Tipo Charla</label>
+                <select class="form-control" id="tipo-numero-charla">
+                  <option selected>Seleccione</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="aforo">Nº Max Participantes</label>
+                <input type="text" class="form-control" id="aforo" placeholder="10">   
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-primary mr-3" data-dismiss="modal">Crear</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modal-asistencia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Grupo Alcohol. Nivel 3</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row bb pl-4 pr-4 pb-4 mb-4">
+          <div class="col">
+            <strong>Charla el 31 de enero de 2018,  10:30 a 11:30</strong><br>
+            Sala 3, Edificio 1, 29012.
+          </div>
+        </div>
+        <div class="row pl-4 pr-4">
+          <div class="col-md-6">
+            <p><strong>Asistentes</strong></p>
+              <div class="form-check">
+              <label class="form-check-label"><input type="checkbox" class="form-check-input mr-2" checked>Diego Arcos Briones</label><br>
+              <label class="form-check-label"><input type="checkbox" class="form-check-input mr-2" checked>Miguel Escalona Mayor</label><br>
+              <label class="form-check-label"><input type="checkbox" class="form-check-input mr-2">Dolores Augusto Trujillo</label><br>
+              <label class="form-check-label"><input type="checkbox" class="form-check-input mr-2" checked>Ana Isabel Cobo Peñas</label><br>
+              <label class="form-check-label"><input type="checkbox" class="form-check-input mr-2">Diego Arcos Briones</label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <a href="" class="btn btn-secondary">Añadir Particpante</a>
+          </div>
+        </div>
+          
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Aceptar</button>
+          <button type="button" class="btn btn-secondary btn-lg" data-dismiss="modal">Imprimir</button>
+          <button type="button" class="btn btn-secondary btn-lg" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="container-fluid main">
   <header class="row align-items-end main">
     <div class="col-sm-auto">
             <div class="brand">
-        <img src="images/assmca-logo.svg" alt="ASSMCA">
+         <a href="index.html"><img src="images/assmca-logo.svg" alt="ASSMCA"></a>
       </div>
     </div>
     <div class="col">
@@ -31,16 +161,16 @@
           <a class="nav-link" href="entrada.html">Recepción y Citas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="recaudos-busqueda-usuario.html">Recaudos</a>
+          <a class="nav-link" href="recaudos-busqueda-usuario.html">Recaudos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="charlas-grupales.html">Charlas Grupales</a>
+          <a class="nav-link active" href="charlas-grupales.html">Charlas Grupales</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Reportes</a>
         </li>        
         <li class="nav-item">
-          <a class="nav-link" href="#">Administración</a>
+          <a class="nav-link" href="cierre-caso.html">Administración</a>
         </li>
       </ul>
     </nav>  
@@ -67,7 +197,7 @@
         Región
       </div>
       <div class="card-block">
-        <p>Seleccione la región y haga clic en el calendario para ver la lista de asitentes.</p>
+        <p>Seleccione la región y haga clic en el calendario para ver la lista de asistentes.</p>
         <div class="form-group">
         <label for="orden">Región</label>
         <select class="custom-select w-100" id="orden">
@@ -87,39 +217,20 @@
           <option value="4">Nombre Centro 4</option>
         </select>
         </div>
-        <div class="form-group">
-        <label for="orden">Trabajador Social</label>
-        <select class="custom-select w-100" id="orden">
-          <option selected value="1">María Perez</option>
-          <option value="2">Antonio Rodríguez</option>
-          <option value="3">José Lopez</option>
-          <option value="4">Ana María González</option>
-        </select>
-        </div>
       </div>
     </div><!-- Card -->
-    <div class="card mb-3">
-      <div class="card-header">
-        Citas Asignadas
-      </div>
-      <div class="card-block">
-          <p>No hay citas Asignadas</p>
-          <p class="txt-grey">Seleccione horarios disponibles en el calendario</p>
-          <button type="button" class="btn btn-primary btn-block disabled">Primary</button>
-          <button type="button" class="btn btn-link btn-block">Volver al Registro</button>
-      </div>
-    </div><!-- Card -->
+    <a href="" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modal-crear-charla" data-whatever="@getbootstrap">Crear Charla</a>
   </div>
   <!-- Contenedor Calendario -->
   <div class="col">
-    <div class="card mb-3">
-      <div class="card-header">
-        Asignar Citas | Calendario Trabajador Social. Usuario: Pedro Perez
+    <div class="card mb-3 card-outline-primary">
+      <div class="card-header card-header-primary">
+        Calendario Charlas Grupales
       </div>
       <div class="card-block calendario-opciones">
         <div class="row">
           <div class="col">
-            <button class="btn btn-secondary">HOY</button> <button class="btn btn-secondary"><</button> <button class="btn btn-secondary">></button> ENERO 2018
+            <button class="btn btn-secondary btn-sm">HOY</button> <button class="btn btn-secondary btn-sm"><span class="fas fa-chevron-left"></span></button> <button class="btn btn-secondary btn-sm mr-3"><span class="fas fa-chevron-right"></span></button> ENERO 2018
           </div>
           <div class="col text-right">
             <button class="btn btn-link active">MES</button>
@@ -127,6 +238,14 @@
             <button class="btn btn-link">DIA</button>
           </div>
         </div>        
+      </div>
+      <div class="card-block leyenda">
+        Leyenda: &nbsp; 
+        <a href="" data-toggle="tooltip" data-html="true" title='Alcoholismo <br><span class="bloque-leyenda grupo1"></span> Nivel 1 <br><span class="bloque-leyenda grupo1 nvl2"></span> Nivel 2 <br><span class="bloque-leyenda grupo1 nvl3"></span> Nivel 3 <br><span class="bloque-leyenda grupo1 nvl4"></span> Nivel 4 <br><span class="bloque-leyenda grupo1 nvl5"></span> Nivel 5 <br>'><span class="bloque-leyenda grupo1"></span></a>
+        <a href="" data-toggle="tooltip" data-html="true" title='Abuso de Substancias <br><span class="bloque-leyenda grupo2"></span> Nivel 1 <br><span class="bloque-leyenda grupo2 nvl2"></span> Nivel 2 <br><span class="bloque-leyenda grupo2 nvl3"></span> Nivel 3 <br><span class="bloque-leyenda grupo2 nvl4"></span> Nivel 4 <br><span class="bloque-leyenda grupo2 nvl5"></span> Nivel 5 <br>'><span class="bloque-leyenda grupo2"></span></a>
+        <a href="" data-toggle="tooltip" data-html="true" title='Grupo 3 <br><span class="bloque-leyenda grupo3"></span> Nivel 1 <br><span class="bloque-leyenda grupo3 nvl2"></span> Nivel 2 <br><span class="bloque-leyenda grupo3 nvl3"></span> Nivel 3 <br><span class="bloque-leyenda grupo3 nvl4"></span> Nivel 4 <br><span class="bloque-leyenda grupo3 nvl5"></span> Nivel 5 <br>'><span class="bloque-leyenda grupo3"></span></a>
+        <a href="" data-toggle="tooltip" data-html="true" title='Grupo 4 <br><span class="bloque-leyenda grupo4"></span> Nivel 1 <br><span class="bloque-leyenda grupo4 nvl2"></span> Nivel 2 <br><span class="bloque-leyenda grupo4 nvl3"></span> Nivel 3 <br><span class="bloque-leyenda grupo4 nvl4"></span> Nivel 4 <br><span class="bloque-leyenda grupo4 nvl5"></span> Nivel 5 <br>'><span class="bloque-leyenda grupo4"></span></a> Disponible (Click para asignar) &nbsp; &nbsp; &nbsp; <span class="bloque-leyenda nohay"></span>
+        No hay Plazas (Cerrado)
       </div>
       <div>
         <!-- comienzo calendario -->
@@ -275,7 +394,7 @@
               <span class="dia">15</span>
             </div>
             <div class="card-block">
-              
+              <a class="dia-clickable" href="" data-toggle="modal" data-target="#modal-crear-charla" data-whatever="@getbootstrap">Espacio Vacío</a>
             </div>
           </div>
           <div class="card">
@@ -307,8 +426,8 @@
               <span class="dia">19</span>
             </div>
             <div class="card-block">
-              <div class="item ts-disponible"><a href="">10:30 - 11:30. P. Paredes</a></div>
-              <div class="item ts-disponible"><a href="">10:30 - 11:30. M. Molina</a></div>
+              <div class="item ts-disponible"><a href="" data-toggle="modal" data-target="#modal-asistencia" data-whatever="@getbootstrap">10:30 - 11:30. P. Paredes</a></div>
+              <div class="item ts-disponible"><a href="" data-toggle="modal" data-target="#modal-asistencia" data-whatever="@getbootstrap">10:30 - 11:30. M. Molina</a></div>
             </div>
           </div>
           <div class="card">
@@ -335,7 +454,7 @@
               <span class="dia">22</span>
             </div>
             <div class="card-block">
-              <div class="item ts-disponible"><a href="">10:30 - 11:30. P. Paredes</a></div>
+              <div class="item ts-disponible"><a href="" data-toggle="modal" data-target="#modal-asistencia" data-whatever="@getbootstrap">10:30 - 11:30. P. Paredes</a></div>
             </div>
           </div>
           <div class="card">
@@ -343,8 +462,8 @@
               <span class="dia">23</span>
             </div>
             <div class="card-block">
-              <div class="item ts-disponible"><a href="">10:30 - 11:30. P. Paredes</a></div>
-              <div class="item ts-disponible"><a href="">10:30 - 11:30. M. Molina</a></div>              
+              <div class="item ts-disponible"><a href="" data-toggle="modal" data-target="#modal-asistencia" data-whatever="@getbootstrap">10:30 - 11:30. P. Paredes</a></div>
+              <div class="item ts-disponible"><a href="" data-toggle="modal" data-target="#modal-asistencia" data-whatever="@getbootstrap">10:30 - 11:30. M. Molina</a></div>              
             </div>
           </div>
           <div class="card">
@@ -458,5 +577,14 @@
 <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+    <script>
+    $( document ).ready(function() {
+
+        $('[data-toggle="tooltip"]').tooltip()
+
+    });
+
+ 
+    </script>
 </body>
 </html>

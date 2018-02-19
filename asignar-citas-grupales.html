@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Asignar Citas (Individual)</title>
+  <title>Asignar Citas (Grupales)</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/fontawesome-all.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -18,20 +18,39 @@
 <body>
 
 <!-- Modal -->
-<form>
-<div class="modal fade" id="asignar-citas-confirmacion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal-orden-jucicial" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Asignar Citas</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Asignar Número de Orden Judicial</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <p>Cita de Pre-Evaluación para el día <strong>jueves 01/26/2017</strong></p>
-        <p>Hora: 10:30am a 11:30am</p>
-        <p>Trabajador Social: Pedro Perez</p>
+        <p>Este usuario <strong>tiene dos (2)</strong> Órdenes Judiciales Activas</p>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="ingresar-orden-judicial">Ingresar Nueva Orden Judicial</label>
+              <input type="text" class="form-control" id="ingresar-orden-judicial" placeholder="OE: 2015-21">
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            
+            <div class="form-group">
+                <label for="asignar-orden-judicial-existente">Asignar con Orden Judicial Existente</label>
+                <select class="form-control" id="asignar-orden-judicial-existente">
+                  <option>Seleccione</option>
+                  <option>Orden</option>
+                  <option>Orden</option>
+                </select>
+              </div>
+
+
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
           <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Aceptar</button>
@@ -40,7 +59,32 @@
     </div>
   </div>
 </div>
-</form>
+
+
+<!-- Modal -->
+
+<div class="modal fade" id="asignar-citas-confirmacion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Asignar Cita</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="mt-5 mb-5 mr-5 ml-5">
+            <p>Cita Grupo Alcohólicos, Nivel 3 para el día <strong>jueves 01/26/2017</strong></p>
+            <p>Hora: 10:30am a 11:30am</p>
+          </div>
+      </div>
+      <div class="modal-footer">
+          <a href="asignar-citas-individual-asignada.html" class="btn btn-primary mr-3">Aceptar</a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -108,13 +152,13 @@
       <div class="card-block">
         <div class="form-check">
           <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="trabajadorSocial" value="option1" checked>
+            <input class="form-check-input" type="radio" name="exampleRadios" id="trabajadorSocial" value="option1">
             Trabajador Social
           </label>
         </div>
         <div class="form-check">
           <label class="form-check-label">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="charlas" value="option2">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="charlas" value="option2" checked>
             Charlas
           </label>
         </div>
@@ -144,32 +188,17 @@
           <option value="4">Nombre Centro 4</option>
         </select>
         </div>
-        <div class="form-group">
-        <label for="orden">Trabajador Social</label>
-        <select class="custom-select w-100" id="orden">
-          <option selected value="1">María Perez</option>
-          <option value="2">Antonio Rodríguez</option>
-          <option value="3">José Lopez</option>
-          <option value="4">Ana María González</option>
-        </select>
-        </div>
       </div>
     </div><!-- Card -->
     <div class="card mb-3">
       <div class="card-header">
-        Citas Asignadas
+        Charlas Asignadas
       </div>
-      <ul class="list-group slim">
-        <li class="list-group-item justify-content-between">
-          Jueves 01/26/2017 <br>
-          10:30am a 11:30am <br>
-          Trabajador Social
-          <span><a href=""><span class="fas fa-trash-alt fa-lg"></span></a></span>
-        </li>
-      </ul>
       <div class="card-block">
-          <a href="imprimir-documentos.html" class="btn btn-primary btn-block">Lista de Documentos</a>
-          <a href="nuevo-confirmacion.html" class="btn btn-link btn-block">Volver al Registro</a>
+          <p>No hay charlas Asignadas</p>
+          <p class="txt-grey">Seleccione horarios disponibles en el calendario</p>
+          <button type="button" class="btn btn-primary btn-block disabled">Lista de Documentos</button>
+          <a href="nuevo-confirmacion.html" class="btn btn-link btn-block">Volver</a>
       </div>
     </div><!-- Card -->
   </div>
@@ -178,7 +207,7 @@
 
     <div class="card mb-3">
       <div class="card-header">
-        Asignar Citas | Calendario Trabajador Social. Usuario: Pedro Perez
+        Asignar Citas | Calendario de Charlas. Usuario: Pedro Perez
       </div>
       <div class="card-block calendario-opciones">
         <div class="row">
@@ -191,6 +220,14 @@
             <button class="btn btn-link">DIA</button>
           </div>
         </div>        
+      </div>
+      <div class="card-block leyenda">
+        Leyenda: &nbsp; 
+        <a href="" data-toggle="tooltip" data-html="true" title='Alcoholismo <br><span class="bloque-leyenda grupo1"></span> Nivel 1 <br><span class="bloque-leyenda grupo1 nvl2"></span> Nivel 2 <br><span class="bloque-leyenda grupo1 nvl3"></span> Nivel 3 <br><span class="bloque-leyenda grupo1 nvl4"></span> Nivel 4 <br><span class="bloque-leyenda grupo1 nvl5"></span> Nivel 5 <br>'><span class="bloque-leyenda grupo1"></span></a>
+        <a href="" data-toggle="tooltip" data-html="true" title='Abuso de Substancias <br><span class="bloque-leyenda grupo2"></span> Nivel 1 <br><span class="bloque-leyenda grupo2 nvl2"></span> Nivel 2 <br><span class="bloque-leyenda grupo2 nvl3"></span> Nivel 3 <br><span class="bloque-leyenda grupo2 nvl4"></span> Nivel 4 <br><span class="bloque-leyenda grupo2 nvl5"></span> Nivel 5 <br>'><span class="bloque-leyenda grupo2"></span></a>
+        <a href="" data-toggle="tooltip" data-html="true" title='Grupo 3 <br><span class="bloque-leyenda grupo3"></span> Nivel 1 <br><span class="bloque-leyenda grupo3 nvl2"></span> Nivel 2 <br><span class="bloque-leyenda grupo3 nvl3"></span> Nivel 3 <br><span class="bloque-leyenda grupo3 nvl4"></span> Nivel 4 <br><span class="bloque-leyenda grupo3 nvl5"></span> Nivel 5 <br>'><span class="bloque-leyenda grupo3"></span></a>
+        <a href="" data-toggle="tooltip" data-html="true" title='Grupo 4 <br><span class="bloque-leyenda grupo4"></span> Nivel 1 <br><span class="bloque-leyenda grupo4 nvl2"></span> Nivel 2 <br><span class="bloque-leyenda grupo4 nvl3"></span> Nivel 3 <br><span class="bloque-leyenda grupo4 nvl4"></span> Nivel 4 <br><span class="bloque-leyenda grupo4 nvl5"></span> Nivel 5 <br>'><span class="bloque-leyenda grupo4"></span></a> Disponible (Click para asignar) &nbsp; &nbsp; &nbsp; <span class="bloque-leyenda nohay"></span>
+        No hay Plazas (Cerrado)
       </div>
       <div>
         <!-- comienzo calendario -->
@@ -526,7 +563,17 @@
     <script>
     $( document ).ready(function() {
 
+        $('#modal-orden-jucicial').modal()
+
+        $("#btnshowhide").click(function(){
+            
+        });
+
+        $('[data-toggle="tooltip"]').tooltip()
+
     });
+
+ 
     </script>
 
 </body>

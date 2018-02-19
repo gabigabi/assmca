@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Balance De Pago Solo Saldo</title>
+  <title>Balance De Pago</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="css/styles.css">
@@ -16,33 +16,34 @@
 </head>
 
 <body>
+
 <div class="container-fluid">
 <header class="row align-items-end main">
     <div class="col-sm-auto">
             <div class="brand">
-        <img src="images/assmca-logo.svg" alt="ASSMCA">
+        <a href="entrada.html"><img src="images/assmca-logo.svg" alt="ASSMCA"></a>
       </div>
     </div>
     <div class="col">
       <nav>
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Recepción y Citas</a>
+          <a class="nav-link active" href="entrada.html">Recepción y Citas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Recaudos</a>
+          <a class="nav-link" href="recaudos-busqueda-usuario.html">Recaudos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Charlas Grupales</a>
+          <a class="nav-link" href="charlas-grupales.html">Charlas Grupales</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Reportes</a>
         </li>        
         <li class="nav-item">
-          <a class="nav-link" href="#">Administración</a>
+          <a class="nav-link" href="cierre-caso.html">Administración</a>
         </li>
       </ul>
-    </nav>  
+    </nav>   
     </div>
     <div class="col-2">
       <ul class="nav nav-pills justify-content-end">
@@ -60,36 +61,58 @@
   </header>
 
 
-<div class="card">
+<div class="card mb-5">
   <div class="card-header">
     Balance de Cuenta. Usuario: Pedro Perez
   </div>
-  <div class="card-block">          
+  <div class="card-block">
 
     <div class="row">
-    <div class="col-md-2">
-      <strong>Balance</strong>
-    </div>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-10">
 
-    <div class="col-md-10">
-      <div class="row">
+        <table class="table table-hover mb-5">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th class="text-right">Monto</th>
+              <th>Estatus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Alcohol - Múltiples Convicciones Tipo 1</td>
+              <td class="text-right">$310.00USD</td>
+              <td class="text-success">Pagada</td>
+            </tr>
+            
+            <tr>
+              <td>Alcohol - Múltiples Convicciones Tipo 2</td>
+              <td class="text-right">$310.00USD</td>
+              <td class="text-danger">Por pagar</td>
+            </tr>
 
-        <div class="col-md-3">
-        Por pagar
-        <p>350 USD</p>        
-        </div><!-- col -->
+            <tr>
+              <td>Alcohol - Múltiples Convicciones Tipo 3</td>
+              <td class="text-right">$310.00USD</td>
+              <td class="text-danger">Por pagar</td>
+            </tr>
+
+            <tr>
+              <td class="text-right"><strong>Total por pagar</strong><br>3 charlas</td>
+              <td class="text-right">$310.00USD</td>
+              <td></td>
+            </tr>
+
+          </tbody>
+        </table>
 
       </div>
-    </div><!-- col-9 -->
-
-    </div><!-- row -->
-
+      <div class="col-lg-1"></div>
+    </div>
 
   </div><!-- card-block -->
 </div><!-- Card -->
-
-
-
 
  
 </div><!-- container-fluid -->
