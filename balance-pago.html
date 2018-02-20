@@ -50,7 +50,7 @@
                 <li><strong>Recibo # 1126587</strong></li>
                 <li><strong>Forma de Pago: Cash</strong></li>
                 <li><strong>Fecha: 6-jan-2018</strong></li>
-                <li><strong>Monto: 350 USD</strong></li>
+                <li><strong>Cantidad: 350 USD</strong></li>
                 <li><strong>Nombre: Pedro Perez</strong></li>
                 <li><strong>ID: 777-777-777</strong></li>
               </ul>
@@ -128,7 +128,7 @@
             <tr>
               <th width="50"></th>
               <th>Item</th>
-              <th class="text-right">Monto</th>
+              <th class="text-right">Cantidad</th>
               <th width="100">Estatus</th>
               <th></th>
             </tr>
@@ -145,7 +145,7 @@
               <td>Alcohol - Múltiples Convicciones Tipo 1</td>
               <td class="text-right">$310.00USD</td>
               <td class="text-success">Pagada</td>
-              <td><a href="#" data-toggle="modal" data-target="#imprimir-recibo-modal" data-whatever="@getbootstrap"><span class="fas fa-print fa-lg"></span></a></td>
+              <td><a href="#" data-toggle="modal" data-target="#imprimir-recibo-modal" data-whatever="@getbootstrap"><span class="fas fa-print fa-lg" data-toggle="tooltip" title="Imprimir Recibo"></span></a></td>
             </tr>
             
             <tr>
@@ -159,7 +159,7 @@
               <td>Alcohol - Múltiples Convicciones Tipo 2</td>
               <td class="text-right">$310.00USD</td>
               <td class="text-danger">Por pagar</td>
-              <td><a href=""><span class="fas fa-eraser  fa-lg"></span></a></td>
+              <td><a href=""><span class="fas fa-eraser fa-lg" data-toggle="tooltip" title="Eliminar Pago"></span></a></td>
             </tr>
 
             <tr>
@@ -173,7 +173,7 @@
               <td>Alcohol - Múltiples Convicciones Tipo 3</td>
               <td class="text-right">$310.00USD</td>
               <td class="text-danger">Por pagar</td>
-              <td><a href=""><span class="fas fa-eraser fa-lg"></span></a></a></td>
+              <td><a href=""><span class="fas fa-eraser fa-lg" data-toggle="tooltip" title="Eliminar Pago"></span></a></a></td>
             </tr>
 
             <tr>
@@ -268,8 +268,16 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/tether.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+
+    <script>
+    $( document ).ready(function() {
+
+        $('[data-toggle="tooltip"]').tooltip()
+
+    });
+
+ 
+    </script>
+
 </body>
 </html>
